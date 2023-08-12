@@ -1,0 +1,92 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand {
+    font-size: 1.8rem;
+    font-weight: $fw-bold;
+}
+
+.menu {
+
+    ul {
+
+        a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: $fw-medium;
+        }
+    }
+
+    .button-signup {
+        font-size: 1.4rem;
+        font-weight: $fw-semibold;
+    }
+}
+
+.hero {
+
+    &__heading {
+        font-size: 6.4rem;
+        font-weight: $fw-black;
+    }
+
+    &__features {
+        ul {
+            font-size: 1.8rem;
+            font-weight: $fw-semibold;
+        }
+    }
+
+}
+
+.billing {
+
+    font-size: 1.4rem;
+    font-weight: $fw-medium;
+
+    &__highlight {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+        font-weight: $fw-bold;
+    }
+}
+
+.pricing {
+}
+
+.card {
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: $fw-bold;
+    }
+
+    &__price {
+
+        &__value {
+            font-size: 6.4rem;
+            font-weight: $fw-extrabold;
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            font-weight: $fw-medium;
+        }
+    }
+
+    &__button-action {
+        font-size: 1.4rem;
+        font-weight: $fw-bold;
+    }
+
+    &__features {
+        ul {
+            list-style: none;
+
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.4rem;
+            font-weight: $fw-medium;
+        }
+    }
+}

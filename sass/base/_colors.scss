@@ -1,0 +1,83 @@
+.brand {
+    color: $color-dark;
+}
+
+.menu {
+
+    ul {
+
+        a {
+            color: $color-black;
+        }
+    }
+
+    .button-signup {
+        background-color: $color-background-blue;
+        color: $color-white;
+    }
+}
+
+.hero {
+
+    &__heading {
+        color: $color-black;
+    }
+
+    &__features {
+        ul {
+            color: $color-black;
+        }
+    }
+
+}
+
+.billing {
+
+    &__options {
+
+        &__switch {
+            background-color: $color-background-gray;
+            
+            .bullet {
+                background-color: $color-white;
+            }
+        }
+    
+    }
+}
+
+.pricing {
+}
+
+.card {
+    border: .1rem solid $color-gray;
+
+    &--business {
+        background-color: $color-background-black;
+        color: $color-white;
+    }
+
+    &__button-action {
+        border: .3rem solid $color-background-blue;
+        color: $color-blue;
+
+        &--business {
+            background-color: $color-blue;
+            color: $color-white;
+            border-color: $color-blue;
+        }
+    }
+
+    
+    &__features {
+        color: $color-gray;
+        
+        &--business {
+            color: $color-white;
+        }
+    }
+
+    &__line {
+        color: #dddddd;
+    }
+}

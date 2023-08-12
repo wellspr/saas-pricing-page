@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@500;600;700;800;900&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>SaaS Pricing Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <section class="navigation">
+                <div class="brand">Social Piper.</div>
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Case Studies</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <button class="button button-signup">Sign Up</button>
+                </nav>
+            </section>
+            <section class="hero">
+                <h1 class="hero__heading">Manage All Your Social Media Profiles From One Place.</h1>
+                <div class="hero__features">
+                    <ul>
+                        <li>Free 15-day trial</li>
+                        <li>Unlimited Team Members</li>
+                        <li>Cancel Anytime</li>
+                    </ul>
+                </div>
+                <div class="billing">
+                    <div class="billing__highlight">
+                        <span class="billing__highlight__text">get 3 months free</span>
+                        <img class="billing__highlight__image" src="images/connector.svg" alt="connector">
+                    </div>
+
+                    <div class="billing__options">
+                        <label for="option-yearly" class="billing__options__yearly">Billed Yearly</label>
+                        
+                        <button class="button billing__options__switch">
+                            <div class="bullet bullet--yearly"></div>
+                        </button>
+                        
+                        <label for="option-monthly" class="billing__options__monthly">Billed Monthly</label>
+                        
+                        <input type="radio" name="option" id="option-yearly" value="yearly" hidden checked>
+                        <input type="radio" name="option" id="option-monthly" value="monthly" hidden>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="pricing">
+            <div class="card">
+                <h2 class="card__heading">Startup</h2>
+                <div class="card__price">
+                    <div class="card__price__value">$14</div>
+                    <div class="card__price__text">per user, per month</div>
+                </div>
+                <button class="button card__button-action">Start My 15-day Trial</button>
+                <hr class="card__line">
+                <div class="card__features">
+                    <ul>
+                        <li>5 Social Profiles</li>
+                        <li>5 Scheduled Posts Per Profile</li>
+                        <li>400+ Templates</li>
+                        <li>Calendar View</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card card--business">
+                <h2 class="card__heading">Business</h2>
+                <div class="card__price">
+                    <div class="card__price__value">$29</div>
+                    <div class="card__price__text">per user, per month</div>
+                </div>
+                <button class="button card__button-action card__button-action--business">Start My 15-day
+                    Trial</button>
+                <hr class="card__line">
+                <div class="card__features card__features--business">
+                    <ul>
+                        <li>10 Social Profiles</li>
+                        <li>25 Scheduled Posts Per Profile</li>
+                        <li>400+ Templates</li>
+                        <li>Calendar View</li>
+                        <li>24/7 VIP Support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="card__heading">Agency</h2>
+                <div class="card__price">
+                    <div class="card__price__value">$139</div>
+                    <div class="card__price__text">per user, per month</div>
+                </div>
+                <button class="button card__button-action">Start My 15-day Trial</button>
+                <hr class="card__line">
+                <div class="card__features">
+                    <ul>
+                        <li>100 Social Profiles</li>
+                        <li>100 Scheduled Posts Per Profile</li>
+                        <li>400+ Templates</li>
+                        <li>Calendar View</li>
+                        <li>24/7 VIP Support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+@keyframes chooseYearly {
+    from { left: calc(100% - 1.6rem - .7rem); }
+    to { left: .7rem }
+}
+
+@keyframes chooseMonthly {
+    from { left: .7rem }
+    to { left: calc(100% - 1.6rem - .7rem); }
+}

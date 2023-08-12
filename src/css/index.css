@@ -1,0 +1,306 @@
+@keyframes chooseYearly {
+  from {
+    left: calc(100% - 1.6rem - 0.7rem);
+  }
+  to {
+    left: 0.7rem;
+  }
+}
+@keyframes chooseMonthly {
+  from {
+    left: 0.7rem;
+  }
+  to {
+    left: calc(100% - 1.6rem - 0.7rem);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  max-width: 110rem;
+  margin-top: 3.5rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  max-width: 110rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+.menu .button-signup {
+  border-radius: 0.4rem;
+  width: 7.6rem;
+  height: 3.4rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 33.3rem;
+  margin: 10rem 0 5rem 0;
+}
+.hero__heading {
+  text-align: center;
+  max-width: 110rem;
+}
+.hero__features {
+  width: 79.4rem;
+}
+.hero__features ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.hero__features ul li::before {
+  content: url(../images/check.svg);
+  margin-right: 2rem;
+}
+
+.billing {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  height: 8.2rem;
+  width: 39.2rem;
+}
+.billing__highlight {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8.2rem;
+}
+.billing__highlight__text {
+  position: absolute;
+  top: 1rem;
+  left: -5rem;
+  transform: rotate(-10deg);
+}
+.billing__highlight__image {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.6rem;
+}
+.billing__options {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1000;
+}
+.billing__options__switch {
+  display: flex;
+  padding: 0.7rem;
+  width: 5.7rem;
+  height: 3rem;
+  border-radius: 6rem;
+  position: relative;
+}
+.billing__options__switch .bullet {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: blue;
+}
+.billing__options__switch .bullet--yearly {
+  animation-name: chooseYearly;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+.billing__options__switch .bullet--monthly {
+  animation-name: chooseMonthly;
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  max-width: 110rem;
+  margin-bottom: 10rem;
+}
+
+.card {
+  border-radius: 0.4rem;
+  width: 30rem;
+  height: 47.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__button-action {
+  width: 22.3rem;
+  height: 5.2rem;
+}
+.card__line {
+  width: 10rem;
+}
+.card__features ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  color: #0A0047;
+}
+
+.menu ul a {
+  color: #000000;
+}
+.menu .button-signup {
+  background-color: #1465FA;
+  color: #ffffff;
+}
+
+.hero__heading {
+  color: #000000;
+}
+.hero__features ul {
+  color: #000000;
+}
+
+.billing__options__switch {
+  background-color: #E1E1E1;
+}
+.billing__options__switch .bullet {
+  background-color: #ffffff;
+}
+
+.card {
+  border: 0.1rem solid #747474;
+}
+.card--business {
+  background-color: #2C3140;
+  color: #ffffff;
+}
+.card__button-action {
+  border: 0.3rem solid #1465FA;
+  color: #1465FA;
+}
+.card__button-action--business {
+  background-color: #1465FA;
+  color: #ffffff;
+  border-color: #1465FA;
+}
+.card__features {
+  color: #747474;
+}
+.card__features--business {
+  color: #ffffff;
+}
+.card__line {
+  color: #dddddd;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.menu ul a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.menu .button-signup {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.hero__heading {
+  font-size: 6.4rem;
+  font-weight: 900;
+}
+.hero__features ul {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.billing {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.billing__highlight {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.card__heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.card__price__value {
+  font-size: 6.4rem;
+  font-weight: 800;
+}
+.card__price__text {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.card__button-action {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.card__features ul {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=index.css.map */
